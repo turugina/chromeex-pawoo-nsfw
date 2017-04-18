@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+    "name": "pawoo NSFW",
+    "version": "0.0.0.1",
+    "description": "pawoo.netで画像を投稿する時に勝手にNSFWにチェック入れるやつ",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://pawoo.net/*"
+            ],
+            "js": [
+                "script.js"
+            ]
+        }
+    ],
+    "web_accessible_resources": [
+        "embeded-script.js"
+    ],
+    "permissions": [
+        "https://pawoo.net/",
+        "tabs"
+    ]
+}
