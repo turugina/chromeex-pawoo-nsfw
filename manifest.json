@@ -15,9 +15,5 @@
     ],
     "web_accessible_resources": [
         "embeded-script.js"
-    ],
-    "permissions": [
-        "https://pawoo.net/",
-        "tabs"
     ]
 }
