@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "pawoo NSFW",
-    "version": "0.0.0.1",
+    "version": "0.1",
     "description": "pawoo.netで画像を投稿する時に勝手にNSFWにチェック入れるやつ",
     "content_scripts": [
         {
@@ -14,7 +14,7 @@
         }
     ],
     "web_accessible_resources": [
-        "embeded-script.js"
+        "pawoo-nsfw.user.js"
     ],
     "homepage_url": "https://github.com/turugina/chromeex-pawoo-nsfw"
 }
