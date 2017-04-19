@@ -7,7 +7,7 @@
 // @match        https://pawoo.net/*
 // @include      https://pawoo.net/*
 // @require      https://code.jquery.com/jquery-3.2.1.slim.min.js
-// @grant        none\
+// @grant        none
 // @website      https://github.com/turugina/chromeex-pawoo-nsfw
 // @run-at document-end
 // ==/UserScript==
