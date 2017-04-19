@@ -6,7 +6,7 @@
 
 ### Chrome拡張機能版 (chromeex-pawoo-nsfw.crx)
 
-Google Chromeや、Chromium(https://www.chromium.org/Home) や Vivaldi(https://vivaldi.com/) などChromeと互換性のあるブラウザ、もしくは拡張機能に互換性のあるブラウザでも動作します。
+Google Chromeや、[Chromium](https://www.chromium.org/Home) や [Vivaldi](https://vivaldi.com/) などChromeと互換性のあるブラウザ、もしくは拡張機能に互換性のあるブラウザでも動作します。
 
 crxファイルは[releaseページ](https://github.com/turugina/chromeex-pawoo-nsfw/releases)から取得可能です。
 
