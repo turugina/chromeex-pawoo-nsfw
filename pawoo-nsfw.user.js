@@ -5,26 +5,29 @@
 // @description  pawoo.netで画像を投稿する時に勝手にNSFWにチェック入れるやつ
 // @author       turugina (turugina@floralcompany.jp)
 // @match        https://pawoo.net/*
-// @grant        none
+// @include      https://pawoo.net/*
+// @require      https://code.jquery.com/jquery-3.2.1.slim.min.js
+// @grant        none\
 // @website      https://github.com/turugina/chromeex-pawoo-nsfw
 // @run-at document-end
 // ==/UserScript==
 
 (function ($) {
     'use strict';
-
-    var $button = $("button:contains(NSFW)");
-    if ($button.length === 1) {
-        var $container = $button.parent();
-        var prevContainerDisp = $container.css("display");
-        setInterval(function () {
-            var containerDisp = $container.css("display");
-            if (prevContainerDisp === "none" && prevContainerDisp !== containerDisp) {
-                if (!$button.hasClass("active")) {
-                    $button.click();
+    $(function () {
+        var $button = $("button:contains(NSFW)");
+        if ($button.length === 1) {
+            var $container = $button.parent();
+            var prevContainerDisp = $container.css("display");
+            setInterval(function () {
+                var containerDisp = $container.css("display");
+                if (prevContainerDisp === "none" && prevContainerDisp !== containerDisp) {
+                    if (!$button.hasClass("active")) {
+                        $button.click();
+                    }
                 }
-            }
-            prevContainerDisp = containerDisp;
-        }, 1000);
-    }
+                prevContainerDisp = containerDisp;
+            }, 1000);
+        }
+    });
 })(window.jQuery);
