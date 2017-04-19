@@ -10,7 +10,7 @@ Google Chromeや、Chromium(https://www.chromium.org/Home) や Vivaldi(https://v
 
 ### ユーザスクリプト版 (pawoo-nsfw.user.js)
 
-GreaseMonkey(http://www.greasespot.net/)やTampermonkey(http://tampermonkey.net/)を使用している場合、pawoo-nsfw.user.js をユーザスクリプトとして追加することでも利用可能です。
+GreaseMonkey(http://www.greasespot.net/) や Tampermonkey(http://tampermonkey.net/) を使用している場合、`pawoo-nsfw.user.js` をユーザスクリプトとして追加することでも利用可能です。
 
 ## known issues
 
