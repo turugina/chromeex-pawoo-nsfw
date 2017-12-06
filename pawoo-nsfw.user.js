@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         pawoo NSFW
 // @namespace    http://dev.floralcompany.jp/pawoo-nsfw
-// @version      0.3.1
+// @version      0.3.2
 // @description  pawoo.netで画像を投稿する時に勝手にNSFWにチェック入れるやつ
 // @author       turugina (turugina@floralcompany.jp)
 // @match        https://pawoo.net/*
@@ -103,9 +103,9 @@
 				}
 				prevImgCount = imgCount;
 				if ( $("#pawoo-nsfw-auto-nsfw-break:checked").val() ) {
-					var $spoiler = $("button.media-spoiler");
+					var $spoiler = $("div.spoiler-button:not(.spoiler-button--visible)");
 					$spoiler.parent().addClass("pawoo-nsfw-broken-spoiler");
-					$spoiler.click();
+					$spoiler.find('button').click();
 				}
 			}, 1000);
 		}
